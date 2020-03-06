@@ -1,0 +1,44 @@
+.item_wrapper {
+    position: relative;
+
+    .copy {
+        position: absolute;
+        top: 50%;
+        left: 145px;
+        transform: translateY(-50%);
+        text-align: left;
+
+        .o-text-heading {
+            color: $white-color;
+            font-size: 48px;
+            line-height: 0.85;
+            letter-spacing: 1.44px;
+        }
+        .description {
+            color: $white-color;
+            font-family: $secondary-font;
+            margin-bottom: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: 0.33px;
+            max-width: 185px;
+            padding: 30px 0 20px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -60px;
+                background: url('../SVG/bg-brush.svg') no-repeat center;
+                top: 0;
+                width: calc(100% + 210px);
+                height: 100%;
+                z-index: -1;
+                background-size: cover;
+            }
+
+        }
+    }
+
+}

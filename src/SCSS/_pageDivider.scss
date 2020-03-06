@@ -1,0 +1,35 @@
+.page-divider {
+    @include container;
+
+    display: block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -35px;
+        left: 0;
+        height: 72px;
+        background: url('../SVG/pd-one.svg') no-repeat center;
+        background-size: 100%;
+        z-index: 1;
+    }
+
+    &.pd-one {
+        &::before {
+            background-image: url('../SVG/pd-one.svg');
+        }
+    }
+    &.pd-two {
+        &::before {
+            background-image: url('../SVG/pd-two.svg');
+        }
+    }
+    &.pd-three {
+        &::before {
+            top: -25px;
+            background-image: url('../SVG/pd-three.svg');
+        }
+    }
+}

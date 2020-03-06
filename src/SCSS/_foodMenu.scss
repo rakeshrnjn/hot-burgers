@@ -1,0 +1,35 @@
+.food-menu {
+    padding: 70px 10px 80px;
+
+    .card {
+        width: 124px;
+        min-height: 120px;
+        padding: 20px;
+
+        &:hover {
+            box-shadow: 0px 5px 10px lightgrey;
+            cursor: pointer;
+        }
+
+        &_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @media (min-width: $screen-sm){
+                flex-wrap: initial;
+            }
+        }
+
+        &_image {
+            margin-bottom: 20px;
+        }
+
+        &_description {
+
+        }
+
+
+    }
+}

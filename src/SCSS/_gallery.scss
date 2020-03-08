@@ -47,6 +47,45 @@
             margin-bottom: 10px;
         }
 
+        &_wrapper {
+            .carousel-dots {
+				li {
+					width: 7px;
+					height: 4px;
+					button {
+						width: 7px;
+						height: 4px;
+						&:before {
+							width: 7px;
+							height: 4px;
+							line-height: 4px;
+							content: '';
+							background-color: $brownish-grey-color;
+							border-radius: 5px;
+						}
+					}
+
+					&.carousel-dots-active {
+						width: 12px;
+						button {
+							width: 12px;
+							&:before {
+								width: 12px;
+								content: '';
+								background-color: $white-color;
+							}
+						}
+					}
+				}
+            }
+            
+            .carousel-item.active {
+                .card {
+                    // transform: scale(1);
+                }
+            }
+        }
+
     }
     
     .wrapper {

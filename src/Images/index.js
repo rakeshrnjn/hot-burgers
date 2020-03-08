@@ -6,3 +6,4 @@ export { default as SandWichImage} from "./sandwich/sandwich.png";
 export { default as SpaghettiImage} from "./spaghetti/spaghetti.png";
 export { default as PizzaImage} from "./pizza/pizza.png";
 export { default as WomanBurgerImage} from "./burger-women/woman-holding-burger.jpg";
+export { default as BrandLogo} from "./logo/brand-logo.png";

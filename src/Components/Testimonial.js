@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Quotes from './Quotes';
+import { Quotes } from './index';
 
 const Testimonial = props => {
 	return (

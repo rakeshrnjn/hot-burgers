@@ -1,2 +1,13 @@
 export { default as Button } from "./Button";
 export { default as Hero } from "./Hero";
+export { default as Nav } from "./Nav";
+export { default as SecondaryNav } from "./SecondaryNav";
+export { default as FoodMenu } from "./FoodMenu";
+export { default as Gallery } from "./Gallery";
+export { default as Card } from "./Card";
+export { default as Carousel } from "./Carousel";
+export { default as PageDivider } from "./PageDivider";
+export { default as Quotes } from "./Quotes";
+export { default as Testimonial } from "./Testimonial";
+export { default as TestimonialSection } from "./TestimonialSection";
+export { default as Title } from "./Title";

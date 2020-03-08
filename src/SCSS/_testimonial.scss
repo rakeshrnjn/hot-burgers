@@ -18,6 +18,45 @@
 
 		.items {
 			margin: 0 -17px;
+			position: relative;
+
+			.carousel-dots {
+				position: absolute;
+				bottom: 25px;
+				display: inline-block !important;
+				width: auto;
+				z-index: 1;
+
+				li {
+					width: 7px;
+					height: 4px;
+					margin: 0 3px;
+					button {
+						width: 7px;
+						height: 4px;
+						&:before {
+							width: 7px;
+							height: 4px;
+							line-height: 4px;
+							content: '';
+							background-color: $brownish-grey-color;
+							border-radius: 20px;
+						}
+					}
+
+					&.carousel-dots-active {
+						width: 12px;
+						button {
+							width: 12px;
+							&:before {
+								width: 12px;
+								content: '';
+								background-color: $primary-color;
+							}
+						}
+					}
+				}
+			}
 
 			.item {
 				display: flex;
@@ -26,21 +65,21 @@
 			.image {
 				padding: 0 17px;
 				height: 318px;
-                flex: 0 0 370px;
-                position: relative;
-                
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 207px;
-                    height: 180px;
-                    background-color: $secondary-color;
-                    top: 100%;
-                    left: -57px;
-                    transform: translateY(-50%);
-                    border-radius: 5px;
-                    z-index: -1;
-                }
+				flex: 0 0 370px;
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 207px;
+					height: 180px;
+					background-color: $secondary-color;
+					top: 85%;
+					left: -57px;
+					transform: translateY(-50%);
+					border-radius: 5px;
+					z-index: -1;
+				}
 			}
 
 			.quotes {
@@ -60,27 +99,27 @@
 					font-size: 10px;
 					font-weight: 200;
 					line-height: 2;
-                    letter-spacing: 0.3px;
+					letter-spacing: 0.3px;
 				}
 
 				&_author {
 					font-size: 12.5px;
 					line-height: 1.2;
-                    letter-spacing: 0.38px;
-                    display: inline-block;
-                    position: relative;
-                    padding-right: 10px;
+					letter-spacing: 0.38px;
+					display: inline-block;
+					position: relative;
+					padding-right: 10px;
 
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        width: 30px;
-                        height: 2px;
-                        background-color: $secondary-color;
-                        top: 50%;
-                        left: 100%;
-                        transform: translateY(-50%);
-                    }
+					&:after {
+						content: '';
+						position: absolute;
+						width: 30px;
+						height: 2px;
+						background-color: $secondary-color;
+						top: 50%;
+						left: 100%;
+						transform: translateY(-50%);
+					}
 
 					&_designation {
 						font-size: 8px;

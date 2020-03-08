@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
-import Carousel from '../Components/Carousel';
-import FoodMenu from '../Components/FoodMenu';
-import Gallery from '../Components/Gallery';
-import TestimonialSection from '../Components/TestimonialSection';
-import PageDivider from '../Components/PageDivider';
+import {Carousel, FoodMenu, Gallery, TestimonialSection, PageDivider} from '../Components/index';
+import Header from './Header';
 
 
 
@@ -14,7 +11,9 @@ class Main extends Component {
 	render() {
 		return (
 			<>
-				{/* <Carousel /> */}
+				<Header />
+				<Carousel />
+				<PageDivider classType="pd-one" />
 				<FoodMenu />
 				<PageDivider classType="pd-two" />
 				<Gallery className="pd-two"/>

@@ -1,12 +1,44 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 body {
-    font-family: $primary-font;
+	font-family: $primary-font;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+ul,
+li,
+a {
+	text-decoration: none;
+}
+
+header {
+	@include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    left: 118px;
+    top: 20px;
+    width: 106px;
+    height: 74px;
 }

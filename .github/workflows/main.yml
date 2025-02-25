@@ -1,0 +1,15 @@
+name: hello-actions-demo
+'on': push
+jobs:
+  my-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-action-demo-step1
+        run: echo "Hello Action Demo 1"
+      - name: my-action-demo-step-1-1
+        run: echo "Hello Action Demo 1-1"
+  my-jobs1:
+    runs-on: windows-latest
+    steps:
+      - name: my-action-demo-step2
+        run: echo "Hello Action Demo 2"
